@@ -1,0 +1,12 @@
+<div   class="overlay">
+    <div class="content" *ngIf="lastChance == true">
+        <h1 class="Title" id="title" style="color: white">If You are caught cheating again You ll be eleminated</h1> 
+        <button (click)=(close()) class="close">Ok</button>
+        <div style="height: 60px;"></div>
+    </div>
+    <div class="content" *ngIf="lastChance == false">
+        <h1 class="Title" id="title" style="color: white"> You were caught cheating ! You are now eliminated.</h1> 
+        <div style="height: 60px;"></div>
+    </div>
+    </div>
+    

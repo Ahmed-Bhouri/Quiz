@@ -1,0 +1,61 @@
+//4k
+.ntfnd{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(13, 13, 13, 0.75);
+    padding:10px 25px;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
+    top:106px;
+    justify-content: center;
+}
+.ntfnd-header{
+    font-size: 60px;
+    font-family: Futura;
+    font-weight: bold;
+    letter-spacing: 0.39px;
+    text-align: center;
+    color: white;
+
+    margin:50px;
+}
+.ntfnd-img{
+    width: auto;
+    height: 600px;
+    margin-bottom:50px;
+}
+
+//laptops
+@media (max-width: 1920px) {
+    .ntfnd-header{ font-size: 40px;margin:30px;}
+    .ntfnd-img{ height: 400px; margin-bottom:30px; }
+}
+@media (max-width: 1280px) {
+    .ntfnd-header{ font-size: 25px;margin:25px; }
+    .ntfnd-img{ height: 300px; margin-bottom:25px; }
+}
+//tablet
+@media (max-width: 800px) {
+    .ntfnd-header{ font-size: 39px;margin:30px; }
+    .ntfnd-img{ height: auto; }
+}
+@media (max-width:768px){
+    .ntfnd{
+        top:65px
+    }
+}
+//mobiles
+@media (max-width: 480px) {
+    .ntfnd-header{ font-size: 39px;margin:30px; }
+    .ntfnd-img{ height: auto; }
+}
+@media (max-width: 400px) {
+    .ntfnd-header{ font-size: 39px;margin:30px; }
+    .ntfnd-img{ height: auto; }
+}
+@media (max-width: 350px) {
+    .ntfnd-header{ font-size: 39px;margin:30px; }
+    .ntfnd-img{ height: auto; }
+}

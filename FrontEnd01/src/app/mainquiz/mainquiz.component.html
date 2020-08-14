@@ -1,0 +1,23 @@
+<div class="questions" id="questions" >
+    <div class="info">
+        <div>Hello<span> {{_currentUser.username}}</span></div>
+        <div>You have <span>{{_currentUser._skips}}</span> Skips Left</div>
+    </div>
+    <div class="question">{{this.index}}) {{this._currntQuestion?.statment}}</div>
+    <div class="options" id="options" >
+        <div (click)=(changeAnswer(option)) class="option" [id]="option._id" *ngFor="let option of this._currntQuestion?.Answers" >
+            <div  class="option-text">{{option?.statment}}</div>
+            <div  [ngStyle]="{'background-color': _currntAnswer?._id == option._id ? 'white' : '' }"  class="option-mark" ></div>
+        </div>
+    </div>
+    <div class="detailsbtns">
+        <div class="skipbutton">
+            <button (click)=(skip()) class="skip" id="skip" >skip</button>
+        </div>
+        <div class="duration" ><div id="duration">{{this.timer_value}}</div> seconds
+        </div>
+        <div class="nextbutton">
+            <button id="next" class="next" (click)=(next()) >Submit</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.75);         
+    top: 140px;                  
+    right: 0;                
+    bottom: 0;
+    left: 0;
+    z-index:9999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display:block;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hide{
+  display: none;
+}
+
+.Title{
+  visibility: visible !important;
+  animation-name: example;
+  animation-duration: 1s;
+  width: 80%;
+  text-align: center;
+  margin: 20px;
+}
+
+@keyframes example {
+  from { opacity:0;};
+  to {opacity:100;}
+}
+
+@media (max-width: 2560px) {
+  .overlay { top: 106px;}
+}
+//mobiles
+@media (max-width: 768px) {
+  .overlay { top: 65px;}
+}
+
+
+  .close{
+    border-radius: 7px;
+    border: solid 3px #ffffff;
+    background-color: rgba(171, 171, 171, 0.4);
+    min-width: 100px;
+    text-align: center;
+    font-family: Futura;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    outline: none;
+    animation-name: example;
+    animation-duration: 1s;
+    width: 20%;
+    height: 60px;
+}
+
+.content{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

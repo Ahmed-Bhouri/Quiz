@@ -1,0 +1,20 @@
+<div class="home" id="home">
+    <div class="description">
+        <div class="info">
+            <div class="title">IoT4Tunisia<span>Bootcamp</span></div>
+            <div class="date">Tuesday, 05 August 2020</div>
+            <div class="place">MentorNations, Tunisia</div>
+        </div>
+        <img src="" alt="" class="line">
+        <div class="quote">Empower Youth Through<br>Technology!</div>
+    </div>
+    <div class="enterbutton"  >
+        <input type="text"  [(ngModel)]="code" class="enter" id="enterinput" placeholder="Enter code to participate"  >
+        <span id="err-msg" style="color:#C80000;margin-top: 1%;visibility:hidden">*Code Not Valid! Please recheck </span>
+    </div>
+    <div class="startbutton">
+        <button (click)=(startQuiz()) class="start" id="start" >Start The Quiz</button>
+    </div>
+    <!--<img src="../../assets/images/arrow.png" alt="" class="arrow">
+    <img src="../../assets/svg/mouse.svg" alt="" class="mouse">-->
+</div>

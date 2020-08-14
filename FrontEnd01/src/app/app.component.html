@@ -1,0 +1,16 @@
+<div class="nav">
+  <img src="../../assets/images/logo.png" alt="" class="img">
+  <div class="title">
+      IoT4Tunisia Bootcamp
+  </div>
+  <div class="info">
+      <span>Tuesday, 05 August 2020</span><br><span>MentorNations, Tunisia</span>
+  </div>
+</div>
+
+<app-startquiz *ngIf="this.startQuizTimer | async"></app-startquiz>
+<app-finished *ngIf="this.FinishedQuiz | async"></app-finished>
+<app-cheating *ngIf="this.CoughtCheating | async"></app-cheating>
+<app-skip-lemit-exeded *ngIf="this.SkipLemitExeded | async"></app-skip-lemit-exeded>
+<app-loader *ngIf="this.isLoading | async"></app-loader>
+  <router-outlet></router-outlet> 

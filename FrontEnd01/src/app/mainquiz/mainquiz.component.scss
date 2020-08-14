@@ -1,0 +1,161 @@
+body::ng-deep{
+  overflow-y: scroll;
+}
+
+.questions{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    height: calc(100vh - 106px);
+    position: relative;
+    top: 106px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.69));
+}
+.question{
+  overflow-y: scroll;
+  padding: 0px 15px;
+  font-family: "Futura";
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+}
+.question::-webkit-scrollbar{
+  display: none;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+.option{
+    width: 80%;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    border-radius: 7px;
+    background-color: rgba(139, 139, 139, 0.45);
+    justify-content: space-between;
+}
+.option-text{   
+    font-family: "Futura";
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+.option-mark{
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    border: solid 2px #8b8b8b;
+}
+.question,.options,.option,.details{
+    margin-bottom: 10px;
+}
+.detailsbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.skip{
+    font-family: "Futura";
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background-color: rgba(139, 139, 139, 0.44);
+}
+.next{
+    font-family: "Futura";
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  padding: 7px 20px;
+  border-radius: 7px;
+  border: solid 3px #ffffff;
+  background: none;
+}
+.duration{
+    font-family: "Futura";
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  flex-direction: column;
+  display: flex;
+}
+.duration, .next{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+@media(max-width:700px){
+    .options{
+        width: 100%;
+    }
+    .questions{
+      height: calc(100vh - 65px);
+      top: 65px;
+    }
+}
+
+.error-options {
+    animation: kf_shake 0.4s 1 linear;
+    cursor: not-allowed;
+          pointer-events: none;
+          color: #c80000;
+          border-color:#c80000 ;
+  }
+  
+  
+  @keyframes kf_shake {
+    0% { transform: translate(20px); }
+    20% { transform: translate(-20px); }
+    40% { transform: translate(10px); }
+    60% { transform: translate(-10px);}
+    80% { transform: translate(5px); }
+    100% { transform: translate(0px);}
+  }
+
+  .info{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
