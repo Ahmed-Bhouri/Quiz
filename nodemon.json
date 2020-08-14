@@ -1,0 +1,13 @@
+{
+    "env":{
+        "MONGO_DB_PASS":"0HzlVDC7L07lkEH0",
+        "MONGO_DB_USER":"quiz",
+        "MONGO_DB_NAME":"QUIZ",
+        "JWT_KEY":"SJuVMqgQ+NJkFydaTLz5YyRJVZgzc4ei",
+        "JWT_ADMIN_KEY":"SJuVMqgQ+NJkFydaTLz5YyRJVZgzc4ei",
+        "CRYPTO_KEY":"A6p9wWeXqCtIktzHl0cBG3igcbWhwSE7",
+        "CRYPTO_IV":"<Buffer 41 36 70 39 77 57 65 58 71 43 74 49 6b 74 7a 48 6c 30 63 42 47 33 69 67 63 62 57 68 77 53 45 37>",
+        "EMAIL":"contact@mentornations.org",
+        "EMAIL_PASS":"Mentor2020*"
+    }
+} 
